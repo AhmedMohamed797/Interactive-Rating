@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contianer {
+  width: 375px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(213, 19%, 18%);
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.contianer .icon {
+  width: 35px;
+  background: #2d3641;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.contianer h2 {
+  font-size: 26px;
+}
+
+.contianer p {
+  font-size: 14px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+}
+
+.contianer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contianer ul li {
+  color: hsl(217, 12%, 63%);
+  background: #2d3641;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contianer ul li.active,
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(216, 12%, 8%);
+}
+
+.contianer ul li:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+button {
+  margin-block: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+  letter-spacing: 2px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.thanks p:first-of-type {
+  color: hsl(25, 97%, 53%);
+  background: #2d3641;
+  width: 190px;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (max-width:424px) {
+  .contianer {
+    width: 300px;
+  }
+}
